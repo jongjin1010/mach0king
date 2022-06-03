@@ -10,6 +10,9 @@ img {
   display: block;
   
 }
+a{
+  text-decoration: none;
+}
 
 /* HEADER */
 header {
@@ -28,4 +31,47 @@ header .logo {
   top: 0;
   bottom: 0;
   margin: auto;
+  display: none;
+}
+header .sub-menu {
+
+}
+header .sub-menu ul.menu{
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+header .sub-menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub-menu ul.menu li:first-child:before {
+  display: none;
+}
+header .sub-menu ul.menu li a {
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+}
+header .sub-menu ul.menu li a:hover{
+  color: #000;
+
+}
+header .sub-menu .search {
+
+}
+header .sub-menu .search .input {
+
+}
+header .sub-menu .search .material-icons{
+
 }
