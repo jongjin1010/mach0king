@@ -185,3 +185,35 @@ header .badges .badge {
   box-shadow: 4px 4px 10px rgba(0, 0 , 0, .15);
   cursor: pointer;
 }
+
+/* VISUAL */
+.visual {
+  margin-top: 120px;
+  background-image: url("../images/visual_bg.jpg");
+  background-position: center;
+}
+.visual .inner {
+  height: 646px;
+  background-color: orange;
+}
+.visual .title {
+
+}
+.visual .title .btn {
+
+}
+.visual .cup1.image {
+
+}
+.visual .cup1.text {
+
+}
+.visual .cup2.image {
+
+}
+.visual .cup2.text {
+
+}
+.visual .spoon {
+
+}
