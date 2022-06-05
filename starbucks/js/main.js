@@ -30,7 +30,6 @@ window.addEventListener('scroll', _.throttle(function () {
     });
   }
 }, 300));
-// _.throttle(함수, 시간)
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function (fadeEl, index) {
@@ -39,7 +38,6 @@ fadeEls.forEach(function (fadeEl, index) {
     opacity: 1
   });
 });
-
 
 new Swiper('.notice-line .swiper-container', {
   direction: 'vertical', // 수직 슬라이드
@@ -64,3 +62,16 @@ new Swiper('.promotion .swiper-container', {
     nextEl: '.promotion .swiper-next'
   }
 })
+
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+
+let isHidePromotion = false;
+promotionToggleBtn.addEventListener('click', function () {
+  isHidePromotion = !isHidePromotion
+  if (isHidePromotion) {
+    promotionEl.classList.add('hide');
+  } else {
+    promotionEl.classList.remove('hide');
+  }
+});
