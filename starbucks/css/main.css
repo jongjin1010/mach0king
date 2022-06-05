@@ -9,7 +9,6 @@ body {
 }
 img {
   display: block;
-  
 }
 a{
   text-decoration: none;
@@ -327,8 +326,15 @@ header .badges .badge {
 }
 .notice .notice-line .inner__left .swiper-container {
   height: 62px;
-  background-color: orange;
   flex-grow: 1;
+}
+.notice .notice-line .inner__left .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner__left .swiper-slide a {
+  color: #fff;
 }
 .notice .notice-line .inner__left .notice-line__more {
   width: 62px;
