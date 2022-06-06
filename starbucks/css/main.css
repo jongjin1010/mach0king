@@ -606,17 +606,40 @@ header .badges .badge {
 
 .youtube .youtube__cover {
   background-image: url("../images//video_cover_pattern.png");
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, .3);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+
 #player {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.youtube .inner {
+  height: 700px;
+}
+
+.youtube .floating1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.youtube .floating2 {
+  position: absolute;
+  top: 350px;
+  left: 150;
+}
+
+.youtube .floating3 {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
 }
