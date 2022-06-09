@@ -1,0 +1,81 @@
+body {
+  font-family: 'Yoon 윤고딕','돋움',dotum,sans-serif;
+}
+
+.inner {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* HEADER */
+header {
+}
+
+header>.inner {
+  background-color: white;
+  height: 80px;
+}
+
+header .logo {
+  width: 116px;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-size: ;
+}
+
+header .menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+header .menu .item {
+  height: 80px;
+  min-width: 80px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+header .menu .item .btn,
+header .menu .item .item__name {}
+
+header .menu .item .item__name {
+  padding: 0 4px;
+  font-size: 14px;
+  line-height: 80px;
+}
+
+header .menu .item:hover .item__name {
+  border-bottom: 2px solid;
+  border-color: #000;
+  text-decoration: underline;
+}
+
+header .menu .item .btn {
+  line-height: 44px;
+  padding: 0 20px;
+  background: #fede22;
+  border: 1px solid #fede22;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 22px;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+header .menu .item .item__contents {}
