@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+KR:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: 'Yoon 윤고딕','돋움',dotum,sans-serif;
+  font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 .inner {
+  position: relative;
   width: 1080px;
   margin: 0 auto;
-  position: relative;
 }
 
 a {
@@ -13,32 +19,27 @@ a {
   color: #000;
 }
 
-/* HEADER */
+/* Header */
 header {
-}
-
-header>.inner {
-  background-color: white;
-  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
 }
 
 header .logo {
-  width: 116px;
-  height: 80px;
-  line-height: 80px;
   position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background-size: ;
+  display: inline-block;
+  margin: 30px 0;
+  width: 116px;
+  height: 20px;
+  margin-left: -8px;
 }
 
 header .menu {
   position: absolute;
-  bottom: 0;
-  right: 0;
   display: flex;
+  top: 0;
+  right: 0;
 }
 
 header .menu .item {
@@ -51,31 +52,44 @@ header .menu .item {
   padding: 0 10px;
 }
 
-header .menu .item .btn,
-header .menu .item .item__name {}
-
 header .menu .item .item__name {
-  padding: 0 4px;
-  font-size: 14px;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 15px;
   line-height: 80px;
 }
 
 header .menu .item:hover .item__name {
-  border-bottom: 2px solid;
-  border-color: #000;
+  border-bottom: 2px solid black;
   text-decoration: underline;
 }
 
-header .menu .item .btn {
-  line-height: 44px;
+header .menu .item .item-btn {
+  line-height: 80px;
+  vertical-align: top;
+}
+
+header .menu .item .item-btn .submit-btn {
   padding: 0 20px;
   background: #fede22;
   border: 1px solid #fede22;
   display: inline-block;
+  line-height: 44px;
   font-size: 14px;
   border-radius: 22px;
   vertical-align: middle;
-  margin-top: 15px;
+  margin-right: 10px;
 }
 
-header .menu .item .item__contents {}
+.intro__bg {
+  width: 100%;
+  height: 720px;
+  background-color: #ffef6b;
+  display: flex;
+  justify-content: center;
+}
+
+.intro__img {
+  width: 1200px;
+  height: 884px;
+}
