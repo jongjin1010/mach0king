@@ -23,8 +23,11 @@ a {
 /* Header */
 header {
   width: 100%;
+  position: fixed;
+  z-index: 10;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-weight: bolder;
+  background-color: white;
 }
 
 header .logo {
@@ -83,7 +86,7 @@ header .menu .item .item-btn .submit-btn {
 }
 
 /* Intro */
-.intro__bg {
+.intro_main .intro__bg {
   position: relative;
   width: 100%;
   height: 720px;
@@ -91,7 +94,7 @@ header .menu .item .item-btn .submit-btn {
   margin: 0;
 }
 
-.intro__img {
+.intro_main .intro__img {
   position: relative;
   max-width: 1200px;
   height: 884px;
@@ -102,7 +105,7 @@ header .menu .item .item-btn .submit-btn {
   margin: auto;
 }
 
-.intro__txt1 {
+.intro_main .intro__txt1 {
   position: absolute;
   top: 175px;
   left: 90px;
@@ -113,7 +116,7 @@ header .menu .item .item-btn .submit-btn {
   -webkit-font-smoothing: antialiased;
 }
 
-.intro__txt2 {
+.intro_main .intro__txt2 {
   line-height: 1.4;
   position: absolute;
   top: 330px;
@@ -123,7 +126,7 @@ header .menu .item .item-btn .submit-btn {
   color: black;
 }
 
-.intro__link {
+.intro_main .intro__link {
   position: absolute;
   top: 410px;
   left: 92px;
@@ -133,19 +136,19 @@ header .menu .item .item-btn .submit-btn {
   text-decoration: underline;
 }
 
-.list_store {
+.intro_main .list_store {
   overflow: hidden;
   position: absolute;
   top: 490px;
   margin-left: 85px;
 }
 
-.list_store li {
+.intro_main .list_store li {
   display: flex;
   padding: 0 3px;
 }
 
-.link_store {
+.intro_main .link_store {
   display: block;
   width: 178px;
   height: 56px;
@@ -160,7 +163,7 @@ header .menu .item .item-btn .submit-btn {
   text-align: center;
 }
 
-.link_store:hover {
+.intro_main .link_store:hover {
   text-decoration: underline;
 }
 
@@ -169,7 +172,7 @@ header .menu .item .item-btn .submit-btn {
   background: url(/mach0king/kakaobank/images/img_kabang_210628.png) no-repeat;
 }
 
-.list_store .link_store .img_kabang {
+.intro_main .list_store .link_store .img_kabang {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -179,9 +182,70 @@ header .menu .item .item-btn .submit-btn {
   vertical-align: middle;
 }
 
-.list_store .link_store .app {
+.intro_main .list_store .link_store .app {
   width: 24px;
   height: 24px;
   margin-top: -4px;
   background-position: -371px -292px;
+}
+
+.intro_tip {
+  height: 750px;
+  margin-top: 140px;
+}
+
+.intro_tip .intro__bg {
+  position: relative;
+  background-color: #fff;
+  color: #111;
+}
+
+.tip_img img {
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  width: 473px;
+  margin: 0 0 0 -500px
+}
+
+.tip_txt {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  margin-left: 90px;
+}
+
+.tip_txt h3 {
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.tip_txt p {
+  margin-top: 34px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #666;
+}
+
+.tip_btn {
+  position: absolute;
+  top: 438px;
+  left: 50%;
+  margin-left: 90px;
+}
+
+.tip_btn .bank_link {
+  display: block;
+  background-color: #f6f6f6;
+  width: 258px;
+  height: 56px;
+  font-size: 16px;
+  line-height: 56px;
+  color: #333;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 16px;
 }
