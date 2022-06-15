@@ -189,6 +189,7 @@ header .menu .item .item-btn .submit-btn {
   background-position: -371px -292px;
 }
 
+/* Intro 2 */
 .intro_tip {
   height: 750px;
   margin-top: 140px;
@@ -249,3 +250,18 @@ header .menu .item .item-btn .submit-btn {
   text-align: center;
   margin-top: 16px;
 }
+
+.tip_btn .bank_link:hover {
+  text-decoration: underline;
+}
+
+/* line */
+.line {
+  width: 100%;
+  height: 32px;
+  background-color: #fafafa;
+}
+
+/* intro 3 */
+
+
