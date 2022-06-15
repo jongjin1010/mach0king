@@ -316,6 +316,9 @@ header .menu .item .item-btn .submit-btn {
   left: 50%;
   margin-left: -470px;
 }
+.saving_btn .saving_link:hover {
+  text-decoration: underline;
+}
 
 .saving_btn .saving_link {
   float: left;
