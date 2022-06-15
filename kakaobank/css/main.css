@@ -264,4 +264,68 @@ header .menu .item .item-btn .submit-btn {
 
 /* intro 3 */
 
+.intro_saving {
+  overflow: hidden;
+  height: 750px;
+}
 
+.intro_saving .intro__bg {
+  position: relative;
+  background-color: #fff;
+  color: #111;
+}
+
+.saving_img1 img {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 409px;
+  height: 722px;
+  margin-left: 120px;
+}
+
+.saving_txt {
+  position: absolute;
+  top: 172px;
+  left: 50%;
+  margin-left: -470px;
+}
+
+.saving_txt h3 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.saving_txt p {
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #666;
+}
+
+.saving_txt img {
+  width: 440px;
+  margin: 142px 0 0 -8px;
+}
+
+.saving_btn {
+  position: absolute;
+  top: 385px;
+  left: 50%;
+  margin-left: -470px;
+}
+
+.saving_btn .saving_link {
+  float: left;
+  width: 158px;
+  height: 56px;
+  margin-right: 6px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  font-size: 15px;
+  line-height: 56px;
+  color: #000;
+  text-align: center;
+}
