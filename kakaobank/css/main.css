@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+KR:wght@200&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
@@ -32,7 +33,6 @@ header .logo {
   margin: 30px 0;
   width: 116px;
   height: 20px;
-  margin-left: -8px;
 }
 
 header .menu {
@@ -55,8 +55,8 @@ header .menu .item {
 header .menu .item .item__name {
   display: inline-block;
   box-sizing: border-box;
-  font-size: 15px;
-  line-height: 80px;
+  font-size: 16px;
+  line-height: 78px;
 }
 
 header .menu .item:hover .item__name {
@@ -79,17 +79,109 @@ header .menu .item .item-btn .submit-btn {
   border-radius: 22px;
   vertical-align: middle;
   margin-right: 10px;
+  margin-bottom: 5px;
 }
 
+/* Intro */
 .intro__bg {
+  position: relative;
   width: 100%;
   height: 720px;
   background-color: #ffef6b;
-  display: flex;
-  justify-content: center;
+  margin: 0;
 }
 
 .intro__img {
-  width: 1200px;
+  position: relative;
+  max-width: 1200px;
   height: 884px;
+  background-image: url(/mach0king/kakaobank/images/main-bg3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  margin: auto;
+}
+
+.intro__txt1 {
+  position: absolute;
+  top: 175px;
+  left: 90px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.4;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.intro__txt2 {
+  line-height: 1.4;
+  position: absolute;
+  top: 330px;
+  left: 92px;
+  font-size: 16px;
+  line-height: 1.95;
+  color: black;
+}
+
+.intro__link {
+  position: absolute;
+  top: 410px;
+  left: 92px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.list_store {
+  overflow: hidden;
+  position: absolute;
+  top: 490px;
+  margin-left: 85px;
+}
+
+.list_store li {
+  display: flex;
+  padding: 0 3px;
+}
+
+.link_store {
+  display: block;
+  width: 178px;
+  height: 56px;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 12px;
+  font-size: 16.2px;
+  font-weight: bold;
+  line-height: 56px;
+  color: #333;
+  background: #fff;
+  text-align: center;
+}
+
+.link_store:hover {
+  text-decoration: underline;
+}
+
+.img_kabang {
+  overflow: hidden;
+  background: url(/mach0king/kakaobank/images/img_kabang_210628.png) no-repeat;
+}
+
+.list_store .link_store .img_kabang {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: -2px 10px 0 0;
+  background-position: -341px -292px;
+  text-indent: 0;
+  vertical-align: middle;
+}
+
+.list_store .link_store .app {
+  width: 24px;
+  height: 24px;
+  margin-top: -4px;
+  background-position: -371px -292px;
 }
